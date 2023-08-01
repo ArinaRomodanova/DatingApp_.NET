@@ -15,5 +15,10 @@ namespace DatingApp.Dal
         DbSet<Account> Accounts { get; set; }
         DbSet<Like> Likes { get; set; }
         DbSet<Photo> Photos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace DatingApp.Dal.Models
     {
         public int AccountId { get; set; }
         public string PhotoPath { get; set; }
+
+        public Account? Account { get; set; }
     }
 }
