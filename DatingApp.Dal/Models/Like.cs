@@ -12,7 +12,7 @@ namespace DatingApp.Dal.Models
         public int FromAccountId { get; set; }
         public int AccountId { get; set; }
 
-        public Account? FromAccount { get; set; }
-        public Account? ToAccount { get; set; }
+        public IEnumerable<Account>? FromAccount { get; set; }
+        public IEnumerable<Account>? ToAccount { get; set; }
     }
 }
