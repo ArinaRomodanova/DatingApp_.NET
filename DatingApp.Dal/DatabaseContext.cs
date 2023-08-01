@@ -3,23 +3,17 @@ using System;
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Storage;
+using DatingApp.Dal.Models;
 
 namespace DatingApp.Dal
 {
     public class DatabaseContext: DbContext
     {
-        public static IConfiguration GetConfiguration() =>
-            new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
-            .Build();
+        public DatabaseContext(DbContextOptions<DatabaseContext> options): base(options) { }
 
-        public DatabaseContext(IConfiguration configuration)
-        {
-
-            var optionsBuider = new DbContextOptionsBuilder<DatabaseContext>();
-            var connectionString = configuration.GetConnectionString("DatingApp");
-            optionsBuider.UseSqlServer(connectionString);
-        }
+        DbSet<User> Users { get; set; }
+        DbSet<Account> Accounts { get; set; }
+        DbSet<Like> Likes { get; set; }
+        DbSet<Photo> Photos { get; set; }
     }
 }
