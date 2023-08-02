@@ -8,7 +8,7 @@ namespace DatingApp.Dal
     {
         public DatabaseContext CreateDbContext(string[] args)
         {
-            var connectionString = @"Data Source=(localdb)\mssqllocaldb;Integrated Security=true;Initial Catalog=DatingApp";
+            var connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Integrated Security=true;Initial Catalog=DatingApp";
             DbContextOptionsBuilder<DatabaseContext> optionsBuilder = new DbContextOptionsBuilder<DatabaseContext>();
             optionsBuilder.UseSqlServer(connectionString, 
                 sqlOptions => sqlOptions.EnableRetryOnFailure());
