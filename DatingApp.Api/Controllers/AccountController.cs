@@ -15,38 +15,5 @@ namespace DatingApp.Api.Controllers
         {
         }
 
-        
-
-
-
-        [HttpPut("[controller]/[action]/{id?}")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<Account> UpdateAccount(int? id, Account entity)
-        {
-            if (id.HasValue && id.Value == entity.Id)
-            {
-                MainRepo.Update(entity);
-                return Ok(entity);
-            }
-            return BadRequest();
-        }
-
-        [HttpDelete("[controller]/[action]/{id?}")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult DeleteAccount(int? id, Account account)
-        {
-            if (id.HasValue && id.Value == account.Id)
-            {
-                MainRepo.Delete(account);
-                return Ok();
-            }
-            return BadRequest();
-        }
     }
 }
