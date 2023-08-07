@@ -15,60 +15,9 @@ namespace DatingApp.Api.Controllers
         {
         }
 
-        [HttpGet("[controller]/[action]", Name ="GetAllAccounts")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<IEnumerable<Account>> GetAllAccounts()
-        {
-            return Ok(MainRepo.GetAll());
-        }
+        
 
-        [HttpGet("[controller]/[action]/{id?}", Name ="GetAccountById")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<Account> GetAccountById(int? id)
-        {
-            if (id.HasValue && id.Value > 0)
-            {
-                return Ok(MainRepo.Find(id.Value));
-            }
-            return BadRequest();
-        }
 
-        /// <summary>
-        /// Adds a single record
-        /// <remarks>
-        /// Sample body:
-        /// <pre>
-        /// {
-        ///     "Id": 1,
-        ///     "Name": "Arina",
-        ///     "City": "Saint-P",
-        ///     "Caption": "lalala",
-        ///     "Age": 21
-        /// }
-        /// </pre>
-        /// </remarks>
-        /// </summary>
-        /// <returns>A new record</returns>
-        [HttpPost("[controller]/[action]", Name = "CreateAccount")]
-        [ProducesResponseType(201)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(201, "Account was created")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<Account> CreateAccount(Account? account)
-        {
-            if (account == null)
-            {
-                return BadRequest();
-            }
-            MainRepo.Add(account);
-            return CreatedAtAction(nameof(GetAccountById), new {Id = account.Id}, account);
-        }
 
         [HttpPut("[controller]/[action]/{id?}")]
         [ProducesResponseType(200)]

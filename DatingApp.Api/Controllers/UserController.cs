@@ -17,29 +17,5 @@ namespace DatingApp.Api.Controllers
         {
             
         }
-
-        [HttpGet("[controller]/[action]", Name ="GetAllUsers")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<IEnumerable<User>> GetALlUsers() 
-        {
-            return Ok(MainRepo.GetAll());
-        }
-
-        [HttpGet("[controller]/[action]/{id?}")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [SwaggerResponse(200, "The execution was successful")]
-        [SwaggerResponse(400, "The execution was failed")]
-        public ActionResult<User> GetUserById(int? id)
-        {
-            if (id.HasValue && id.Value > 0)
-            {
-                return Ok(MainRepo.Find(id.Value));
-            }
-            return BadRequest();
-        }
     }
 }
