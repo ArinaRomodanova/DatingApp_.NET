@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace DatingApp.Dal.Models
@@ -13,6 +14,8 @@ namespace DatingApp.Dal.Models
         public int AccountId { get; set; }
         public string PhotoPath { get; set; }
 
+
+        [JsonIgnore]
         [ForeignKey(nameof(AccountId))]
         [InverseProperty(nameof(Account.PhotoNavigation))]
         public Account? AccountNavigation { get; set; }
