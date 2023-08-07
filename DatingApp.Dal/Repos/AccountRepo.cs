@@ -1,6 +1,7 @@
 ﻿using DatingApp.Dal.Models;
 using DatingApp.Dal.Repos.Base;
 using DatingApp.Dal.Repos.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,13 @@ namespace DatingApp.Dal.Repos
     {
         public AccountRepo(DatabaseContext databaseContext) : base(databaseContext)
         {
+            
         }
+
+        public IEnumerable<Account> GetAll()
+        {
+            return Table.OrderBy(c => c.Id);
+        }
+
     }
 }

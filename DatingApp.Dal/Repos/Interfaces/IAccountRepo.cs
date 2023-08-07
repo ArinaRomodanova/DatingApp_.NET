@@ -10,5 +10,6 @@ namespace DatingApp.Dal.Repos.Interfaces
 {
     public interface IAccountRepo: IRepo<Account>
     {
+        IEnumerable<Account> GetAll();
     }
 }

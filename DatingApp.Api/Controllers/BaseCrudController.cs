@@ -13,11 +13,5 @@ namespace DatingApp.Api.Controllers
             MainRepo = repo;
         }
 
-        [HttpGet(Name = "GetAll")]
-        public ActionResult<IEnumerable<TEntity>> GetAll()
-        {
-            return Ok(MainRepo.GetAll());
-        }
-
     }
 }

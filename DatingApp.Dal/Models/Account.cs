@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using DatingApp.Dal.Models.Base;
 
@@ -26,13 +27,15 @@ namespace DatingApp.Dal.Models
         [Required]
         public int Age { get; set; }
 
-
+        [JsonIgnore]
         [InverseProperty(nameof(User.AccountNavigation))]
         public User? UserNavigation { get; set; }
 
-        public IEnumerable<Like> LikeNavigation { get; set; }
+        [JsonIgnore]
+        public IEnumerable<Like>? LikeNavigation { get; set; }
 
+        [JsonIgnore]
         [InverseProperty(nameof(Photo.AccountNavigation))]
-        public IEnumerable<Photo> PhotoNavigation { get; set; }
+        public IEnumerable<Photo>? PhotoNavigation { get; set; }
     }
 }

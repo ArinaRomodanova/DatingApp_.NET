@@ -2,12 +2,13 @@ using DatingApp.Dal;
 using DatingApp.Dal.Repos;
 using DatingApp.Dal.Repos.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -18,6 +19,7 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
     options.UseSqlServer(connectionString, sqlOptions => sqlOptions.EnableRetryOnFailure());
 });
 builder.Services.AddScoped<IUserRepo, UserRepo>();
+builder.Services.AddScoped<IAccountRepo, AccountRepo>();
 
 var app = builder.Build();
 
