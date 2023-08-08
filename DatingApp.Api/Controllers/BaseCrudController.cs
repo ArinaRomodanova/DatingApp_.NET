@@ -28,7 +28,6 @@ namespace DatingApp.Api.Controllers
         [SwaggerResponse(400, "The execution was failed")]
         public ActionResult<IEnumerable<TEntity>> GetAll()
         {
-            Logger.LogAppError("Getting all records of " + nameof(TEntity));
             return Ok(MainRepo.GetAll());
         }
 
@@ -41,9 +40,9 @@ namespace DatingApp.Api.Controllers
         {
             if (id.HasValue && id.Value > 0)
             {
-                
                 return Ok(MainRepo.Find(id.Value));
             }
+            Logger.LogAppError("Invalid request to table " +typeof(TEntity).Name);
             return BadRequest();
         }
 
@@ -72,6 +71,7 @@ namespace DatingApp.Api.Controllers
         {
             if (entity == null)
             {
+                Logger.LogAppError($"Value of entity {typeof(TEntity).Name} is NULL");
                 return BadRequest();
             }
             MainRepo.Add(entity);
@@ -90,6 +90,7 @@ namespace DatingApp.Api.Controllers
                 MainRepo.Update(entity);
                 return Ok(entity);
             }
+            Logger.LogAppError($"Invalid request to table {typeof(TEntity).Name}");
             return BadRequest();
         }
 
@@ -106,6 +107,7 @@ namespace DatingApp.Api.Controllers
                 
                 return Ok();
             }
+            Logger.LogAppError($"Invalid request to table {typeof(TEntity).Name}");
             return BadRequest();
         }
     }
