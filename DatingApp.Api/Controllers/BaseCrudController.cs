@@ -3,16 +3,22 @@ using DatingApp.Dal.Models.Base;
 using DatingApp.Dal.Repos.Base;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.Swagger.Annotations;
+using Serilog;
+using Serilog.Events;
+using Serilog.Formatting.Json;
+using DatingApp.Logging;
 
 namespace DatingApp.Api.Controllers
 {
     public class BaseCrudController<TEntity, TController> : ControllerBase where TEntity : BaseModel, new() where TController : class
     {
         protected readonly IRepo<TEntity> MainRepo;
+        protected readonly IAppLogger<TController> Logger;
         
-        protected BaseCrudController(IRepo<TEntity> repo)
+        protected BaseCrudController(IRepo<TEntity> repo, IAppLogger<TController> logger)
         {
             MainRepo = repo;
+            Logger = logger;
         }
 
         [HttpGet("[controller]/[action]")]
@@ -22,6 +28,7 @@ namespace DatingApp.Api.Controllers
         [SwaggerResponse(400, "The execution was failed")]
         public ActionResult<IEnumerable<TEntity>> GetAll()
         {
+            Logger.LogAppError("Getting all records of " + nameof(TEntity));
             return Ok(MainRepo.GetAll());
         }
 
@@ -34,6 +41,7 @@ namespace DatingApp.Api.Controllers
         {
             if (id.HasValue && id.Value > 0)
             {
+                
                 return Ok(MainRepo.Find(id.Value));
             }
             return BadRequest();
@@ -95,6 +103,7 @@ namespace DatingApp.Api.Controllers
             if (id.HasValue && id.Value == entity.Id)
             {
                 MainRepo.Delete(entity);
+                
                 return Ok();
             }
             return BadRequest();

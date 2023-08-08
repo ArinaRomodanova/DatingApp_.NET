@@ -1,0 +1,4 @@
+[23-08-08 15:30:39 Error]DatingApp.Api:DatingApp.Api.Controllers.AccountController
+Message:Getting all records of TEntity
+in method GetAll at C:\Users\User\source\repos\DatingApp.Dal\DatingApp.Api\Controllers\BaseCrudController.cs:31
+
