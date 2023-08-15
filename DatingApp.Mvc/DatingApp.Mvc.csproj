@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DatingApp.Dal\DatingApp.Dal.csproj" />
+    <ProjectReference Include="..\DatingApp.Logging\DatingApp.Logging.csproj" />
+  </ItemGroup>
+
 </Project>
