@@ -35,7 +35,7 @@ namespace DatingApp.Mvc.Controllers
             {
                 return View("Success", checkUser);
             }
-            ViewBag.IsCorrectData = false;
+            ViewBag.IsCorrectSignInData = false;
             return View(nameof(Index));
         }
     }
