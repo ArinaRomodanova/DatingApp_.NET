@@ -11,5 +11,6 @@ namespace DatingApp.Dal.Repos.Interfaces
     public interface IUserRepo: IRepo<User>
     {
         public IEnumerable<User> GetAll();
+        public User GetUserByLogin(string login);
     }
 }

@@ -22,5 +22,12 @@ namespace DatingApp.Dal.Repos
         {
             return Table.Include(u => u.AccountNavigation).OrderBy(u => u.Id);
         }
+
+        public User GetUserByLogin(string login)
+        {
+            return Table
+                .Where(u => u.Login == login)
+                .First();
+        }
     }
 }
