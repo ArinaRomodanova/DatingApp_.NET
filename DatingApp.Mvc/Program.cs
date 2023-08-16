@@ -1,7 +1,21 @@
+using DatingApp.Dal;
+using DatingApp.Dal.Models;
+using DatingApp.Dal.Repos;
+using DatingApp.Dal.Repos.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("DatingApp");
+builder.Services.AddDbContextPool<DatabaseContext>(options =>
+{
+    options.UseSqlServer(connectionString, sqlOptions => sqlOptions.EnableRetryOnFailure());
+});
+
+builder.Services.AddScoped<IUserRepo, UserRepo>();
 
 var app = builder.Build();
 
