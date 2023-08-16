@@ -1,0 +1,203 @@
+[23-08-16 13:50:51 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:7044"
+in method  at :
+
+[23-08-16 13:50:51 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5025"
+in method  at :
+
+[23-08-16 13:50:51 Information]:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[23-08-16 13:50:51 Information]:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[23-08-16 13:50:51 Information]:Microsoft.Hosting.Lifetime
+Message:Content root path: "C:\Users\User\source\repos\DatingApp.Dal\DatingApp.Api\"
+in method  at :
+
+[23-08-16 13:50:52 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger - -
+in method  at :
+
+[23-08-16 13:50:53 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger - - - 301 0 - 722.9114ms
+in method  at :
+
+[23-08-16 13:50:53 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - -
+in method  at :
+
+[23-08-16 13:51:15 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:7044"
+in method  at :
+
+[23-08-16 13:51:15 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5025"
+in method  at :
+
+[23-08-16 13:51:15 Information]:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[23-08-16 13:51:15 Information]:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[23-08-16 13:51:15 Information]:Microsoft.Hosting.Lifetime
+Message:Content root path: "C:\Users\User\source\repos\DatingApp.Dal\DatingApp.Api\"
+in method  at :
+
+[23-08-16 13:51:16 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/swagger-ui-standalone-preset.js - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/swagger-ui-bundle.js - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/swagger-ui.css - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 55.9726ms
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/_vs/browserLink - -
+in method  at :
+
+[23-08-16 13:51:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/index.html - - - 200 - text/html;charset=utf-8 1512.3708ms
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 305.6078ms
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 184.5154ms
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/swagger-ui.css - - - 200 143632 text/css 317.5381ms
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 337.7530ms
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - -
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/favicon-32x32.png - -
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+in method  at :
+
+[23-08-16 13:51:18 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/favicon-32x32.png - - - 200 628 image/png 12.5970ms
+in method  at :
+
+[23-08-16 13:51:19 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 416.9256ms
+in method  at :
+
+[23-08-16 13:51:32 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/User/User/GetAll - -
+in method  at :
+
+[23-08-16 13:51:32 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.UserController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 13:51:32 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.User]] GetAll()" on controller "DatingApp.Api.Controllers.UserController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 13:51:38 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.User, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 13:51:52 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("558"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AccountId], [u].[Login], [u].[Password], [u].[TimeStamp], [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Users] AS [u]
+INNER JOIN [Accounts] AS [a] ON [u].[AccountId] = [a].[Id]
+ORDER BY [u].[Id]"
+in method  at :
+
+[23-08-16 13:51:53 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.UserController.GetAll (DatingApp.Api)" in 20495.052ms
+in method  at :
+
+[23-08-16 13:51:53 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.UserController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 13:51:53 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/User/User/GetAll - - - 200 - application/json;+charset=utf-8 20721.2023ms
+in method  at :
+
+[23-08-16 13:52:07 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/User/User/GetUserByLogin/arinaromo - -
+in method  at :
+
+[23-08-16 13:52:07 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.UserController.GetUserByLogin (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 13:52:07 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetUserByLogin\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult GetUserByLogin(System.String)" on controller "DatingApp.Api.Controllers.UserController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 13:52:08 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("257"ms) [Parameters=["@__login_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccountId], [u].[Login], [u].[Password], [u].[TimeStamp]
+FROM [Users] AS [u]
+WHERE [u].[Login] = @__login_0"
+in method  at :
+
+[23-08-16 13:52:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"DatingApp.Dal.Models.User"'.
+in method  at :
+
+[23-08-16 13:52:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.UserController.GetUserByLogin (DatingApp.Api)" in 646.1075ms
+in method  at :
+
+[23-08-16 13:52:08 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.UserController.GetUserByLogin (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 13:52:08 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/User/User/GetUserByLogin/arinaromo - - - 200 - application/json;+charset=utf-8 713.9087ms
+in method  at :
+
