@@ -7,7 +7,7 @@
         <h2>Вход</h2>
         <form method="post">
             @{
-                if (ViewBag.IsCorrectData == false && ViewBag.IsCorrectData != null)
+                if (ViewBag.IsCorrectSignInData == false && ViewBag.IsCorrectSignInData != null)
                 {
                     <div>
                         <label style="color: red; margin-bottom: 10px">Неверно введен логин или пароль</label>

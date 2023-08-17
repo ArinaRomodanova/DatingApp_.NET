@@ -1,0 +1,28 @@
+﻿@model DatingApp.Dal.Models.User
+
+<div class="container">
+    <div class="form-sign-in-container form-sign-in-container">
+        <h2>Регистрация</h2>
+        <form method="post">
+                    <div class="textbox">
+                        <div class="row">
+                            <input type="text" name="Login" id="login-sign-in" class="textbox-google" required>
+                            <span class="bar"></span>
+                            <label class="text-label">Логин</label>
+                        </div>
+                        <div class="row">
+                            <input type="password" name="password" id="password-sign-in" class="textbox-google"
+                                   required>
+                            <span class="bar"></span>
+                            <label class="text-label">Пароль</label>
+                        </div>
+                    </div>
+            <div class="row-10">
+                <input asp-action="Registrate" type="submit" class="button-Ok-Sign-Up" value="Зарегистрироваться">
+            </div>
+            <div>
+                <a asp-controller="SignIn" asp-action="Index" class="ref-to-reg">Войти</a>
+            </div>
+        </form>
+    </div>
+</div>

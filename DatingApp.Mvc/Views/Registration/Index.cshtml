@@ -1,49 +1,33 @@
-﻿<div class="container">
-    <div class="form-sign-in-container form-sign-in-container-1">
+﻿@model DatingApp.Dal.Models.Account
+
+<div class="container">
+    <div class="form-sign-in-container form-sign-in-container">
         <h2>Регистрация</h2>
         <form method="post">
-            <div class="form-cols">
-                <div class="left-side">
                     <div class="textbox">
                         <div class="row">
-                            <input type="text" name="Name" id="name" class="textbox-google" required>
+                            <input asp-for="Name" type="text" name="Name" id="name" class="textbox-google" required>
                             <span class="bar"></span>
                             <label class="text-label">Имя</label>
                         </div>
                         <div class="row">
-                            <input type="text" name="City" id="city" class="textbox-google" required>
+                            <input asp-for=City type="text" name="City" id="city" class="textbox-google" required>
                             <span class="bar"></span>
                             <label class="text-label">Город</label>
                         </div>
                         <div class="row">
-                            <input type="text" name="Age" id="age" class="textbox-google" required>
+                            <input asp-for="Age" type="text" name="Age" id="age" class="textbox-google" required>
                             <span class="bar"></span>
                             <label class="text-label">Возраст</label>
                         </div>
                         <div class="row-10">
                             <div class="row-label"><label for="caption">Описание</label></div>
-                            <textarea name="Caption" id="caption" class="textarea-caption" placeholder="">
+                            <textarea asp-for="Caption" name="Caption" id="caption" class="textarea-caption" placeholder="">
                             </textarea>
                         </div>
-                    </div>
-                </div>
-
-                <div class="right-side">
-                    <div class="row">
-                        <input type="text" name="Login" id="login-sign-in" class="textbox-google" required>
-                        <span class="bar"></span>
-                        <label class="text-label">Логин</label>
-                    </div>
-                    <div class="row">
-                        <input type="password" name="password" id="password-sign-in" class="textbox-google"
-                               required>
-                        <span class="bar"></span>
-                        <label class="text-label">Пароль</label>
-                    </div>
-                </div>
-            </div>
+                    </div>           
             <div class="row-10">
-                <input type="submit" class="button-Ok-Sign-Up" value="Зарегистрироваться">
+                <input asp-action="NextRegStep" type="submit" class="button-Ok-Sign-Up" value="Далее →">
             </div>
             <div>
                 <a asp-controller="SignIn" asp-action="Index" class="ref-to-reg">Войти</a>

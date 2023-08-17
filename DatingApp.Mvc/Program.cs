@@ -16,6 +16,7 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
 });
 
 builder.Services.AddScoped<IUserRepo, UserRepo>();
+builder.Services.AddScoped<IAccountRepo, AccountRepo>();
 
 var app = builder.Build();
 

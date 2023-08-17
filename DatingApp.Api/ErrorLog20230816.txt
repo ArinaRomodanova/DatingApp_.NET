@@ -201,3 +201,910 @@ in method  at :
 Message:Request finished HTTP/2 GET https://localhost:7044/api/User/User/GetUserByLogin/arinaromo - - - 200 - application/json;+charset=utf-8 713.9087ms
 in method  at :
 
+[23-08-16 17:24:46 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:7044"
+in method  at :
+
+[23-08-16 17:24:46 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5025"
+in method  at :
+
+[23-08-16 17:24:46 Information]:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+in method  at :
+
+[23-08-16 17:24:46 Information]:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+in method  at :
+
+[23-08-16 17:24:46 Information]:Microsoft.Hosting.Lifetime
+Message:Content root path: "C:\Users\User\source\repos\DatingApp.Dal\DatingApp.Api\"
+in method  at :
+
+[23-08-16 17:24:47 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/index.html - -
+in method  at :
+
+[23-08-16 17:24:47 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/_framework/aspnetcore-browser-refresh.js - -
+in method  at :
+
+[23-08-16 17:24:47 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 13.6282ms
+in method  at :
+
+[23-08-16 17:24:47 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/index.html - - - 200 - text/html;charset=utf-8 730.8501ms
+in method  at :
+
+[23-08-16 17:24:47 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/_vs/browserLink - -
+in method  at :
+
+[23-08-16 17:24:48 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.6045ms
+in method  at :
+
+[23-08-16 17:24:48 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - -
+in method  at :
+
+[23-08-16 17:24:48 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.3992ms
+in method  at :
+
+[23-08-16 17:25:03 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:25:03 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:04 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:25:05 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:25:08 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("393"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:25:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 4949.7209ms
+in method  at :
+
+[23-08-16 17:25:08 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:09 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 5061.1569ms
+in method  at :
+
+[23-08-16 17:25:27 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 88
+in method  at :
+
+[23-08-16 17:25:27 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:27 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DatingApp.Dal.Models.Account] Create(DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:25:31 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("98"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 150), @p3='?' (Size = 50), @p4='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Id], [Age], [Caption], [City], [Name])
+OUTPUT INSERTED.[TimeStamp]
+VALUES (@p0, @p1, @p2, @p3, @p4);"
+in method  at :
+
+[23-08-16 17:25:31 Error]:Microsoft.EntityFrameworkCore.Update
+Message:An exception occurred in the database while saving changes for context type '"DatingApp.Dal.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Accounts' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:3bc0481f-c9c2-4d17-b8f6-243dd3573f00
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+in method  at :
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Accounts' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:3bc0481f-c9c2-4d17-b8f6-243dd3573f00
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+[23-08-16 17:25:32 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "CreatedAtActionResult", writing value of type '"DatingApp.Dal.Models.Account"'.
+in method  at :
+
+[23-08-16 17:25:35 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)" in 7908.1887ms
+in method  at :
+
+[23-08-16 17:25:35 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:35 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 88 - 201 - application/json;+charset=utf-8 7941.7814ms
+in method  at :
+
+[23-08-16 17:25:48 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77
+in method  at :
+
+[23-08-16 17:25:48 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:48 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DatingApp.Dal.Models.Account] Create(DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:25:49 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 150), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Age], [Caption], [City], [Name])
+OUTPUT INSERTED.[Id], INSERTED.[TimeStamp]
+VALUES (@p0, @p1, @p2, @p3);"
+in method  at :
+
+[23-08-16 17:25:49 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "CreatedAtActionResult", writing value of type '"DatingApp.Dal.Models.Account"'.
+in method  at :
+
+[23-08-16 17:25:49 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)" in 1644.3757ms
+in method  at :
+
+[23-08-16 17:25:49 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:25:49 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77 - 201 - application/json;+charset=utf-8 1652.7385ms
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 19.9212ms
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:04 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 28.9519ms
+in method  at :
+
+[23-08-16 17:26:13 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77
+in method  at :
+
+[23-08-16 17:26:13 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:13 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DatingApp.Dal.Models.Account] Create(DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:26:17 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 150), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Age], [Caption], [City], [Name])
+OUTPUT INSERTED.[Id], INSERTED.[TimeStamp]
+VALUES (@p0, @p1, @p2, @p3);"
+in method  at :
+
+[23-08-16 17:26:19 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "CreatedAtActionResult", writing value of type '"DatingApp.Dal.Models.Account"'.
+in method  at :
+
+[23-08-16 17:26:21 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)" in 8118.8447ms
+in method  at :
+
+[23-08-16 17:26:21 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:21 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77 - 201 - application/json;+charset=utf-8 8128.2180ms
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 7.6744ms
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:31 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 17.5104ms
+in method  at :
+
+[23-08-16 17:26:48 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77
+in method  at :
+
+[23-08-16 17:26:48 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:26:48 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DatingApp.Dal.Models.Account] Create(DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:27:06 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 150), @p2='?' (Size = 50), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Accounts] ([Age], [Caption], [City], [Name])
+OUTPUT INSERTED.[Id], INSERTED.[TimeStamp]
+VALUES (@p0, @p1, @p2, @p3);"
+in method  at :
+
+[23-08-16 17:27:23 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "CreatedAtActionResult", writing value of type '"DatingApp.Dal.Models.Account"'.
+in method  at :
+
+[23-08-16 17:27:23 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)" in 35537.1716ms
+in method  at :
+
+[23-08-16 17:27:23 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.Create (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:27:23 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 POST https://localhost:7044/api/Account/Account/Create application/json 77 - 201 - application/json;+charset=utf-8 35545.3800ms
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 17.9341ms
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:27:32 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 31.2580ms
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 44
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 44.0864ms
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:01 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 44 - 400 - application/problem+json;+charset=utf-8 65.4014ms
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 13
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 3.1147ms
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:08 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 13 - 400 - application/problem+json;+charset=utf-8 18.4460ms
+in method  at :
+
+[23-08-16 17:28:51 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 88
+in method  at :
+
+[23-08-16 17:28:51 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:51 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:28:52 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("164"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Accounts]
+OUTPUT 1
+WHERE [Id] = @p0 AND [TimeStamp] IS NULL;"
+in method  at :
+
+[23-08-16 17:28:52 Error]:Microsoft.EntityFrameworkCore.Update
+Message:An exception occurred in the database while saving changes for context type '"DatingApp.Dal.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+in method  at :
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+[23-08-16 17:28:52 Information]:Microsoft.AspNetCore.Mvc.StatusCodeResult
+Message:Executing StatusCodeResult, setting HTTP status code 200
+in method  at :
+
+[23-08-16 17:28:52 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 258.3004ms
+in method  at :
+
+[23-08-16 17:28:52 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:52 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 88 - 200 0 - 276.8553ms
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 9.9948ms
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:28:56 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 19.8028ms
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 16.2658ms
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:03 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 35.1909ms
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 88
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Accounts]
+OUTPUT 1
+WHERE [Id] = @p0 AND [TimeStamp] IS NULL;"
+in method  at :
+
+[23-08-16 17:29:16 Error]:Microsoft.EntityFrameworkCore.Update
+Message:An exception occurred in the database while saving changes for context type '"DatingApp.Dal.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+in method  at :
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnly(Int32 commandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Mvc.StatusCodeResult
+Message:Executing StatusCodeResult, setting HTTP status code 200
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 57.2394ms
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:16 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 88 - 200 0 - 66.9626ms
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 9.2876ms
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:29:26 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 24.4310ms
+in method  at :
+
+[23-08-16 17:30:16 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 119
+in method  at :
+
+[23-08-16 17:30:16 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:16 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:30:17 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("179"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Accounts]
+OUTPUT 1
+WHERE [Id] = @p0 AND [TimeStamp] = @p1;"
+in method  at :
+
+[23-08-16 17:30:17 Information]:Microsoft.AspNetCore.Mvc.StatusCodeResult
+Message:Executing StatusCodeResult, setting HTTP status code 200
+in method  at :
+
+[23-08-16 17:30:17 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 190.679ms
+in method  at :
+
+[23-08-16 17:30:17 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/8 application/json 119 - 200 0 - 203.9446ms
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 6.4776ms
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:21 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 15.7536ms
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/7 application/json 119
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Accounts]
+OUTPUT 1
+WHERE [Id] = @p0 AND [TimeStamp] = @p1;"
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Mvc.StatusCodeResult
+Message:Executing StatusCodeResult, setting HTTP status code 200
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 13.0035ms
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:38 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/7 application/json 119 - 200 0 - 58.3386ms
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 8.269ms
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:42 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 21.8359ms
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/6 application/json 119
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"DeleteAccount\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteAccount(System.Nullable`1[System.Int32], DatingApp.Dal.Models.Account)" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 8) (DbType = Binary)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Accounts]
+OUTPUT 1
+WHERE [Id] = @p0 AND [TimeStamp] = @p1;"
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Mvc.StatusCodeResult
+Message:Executing StatusCodeResult, setting HTTP status code 200
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)" in 7.3008ms
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.DeleteAccount (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:30:57 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 DELETE https://localhost:7044/api/Account/Account/DeleteAccount/6 application/json 119 - 200 0 - 15.7502ms
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - -
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetAll\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DatingApp.Dal.Models.Account]] GetAll()" on controller "DatingApp.Api.Controllers.AccountController" ("DatingApp.Api").
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing "OkObjectResult", writing value of type '"Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[DatingApp.Dal.Models.Account, DatingApp.Dal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.EntityFrameworkCore.Database.Command
+Message:Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Age], [a].[Caption], [a].[City], [a].[Name], [a].[TimeStamp]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Id]"
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)" in 10.1359ms
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"DatingApp.Api.Controllers.AccountController.GetAll (DatingApp.Api)"'
+in method  at :
+
+[23-08-16 17:31:03 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:7044/api/Account/Account/GetAll - - - 200 - application/json;+charset=utf-8 21.0828ms
+in method  at :
+
