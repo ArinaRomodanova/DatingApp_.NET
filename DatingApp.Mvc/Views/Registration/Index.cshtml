@@ -16,13 +16,14 @@
                             <label class="text-label">Город</label>
                         </div>
                         <div class="row">
-                            <input asp-for="Age" type="text" name="Age" id="age" class="textbox-google" required>
+                            <input asp-for="Age" type="number" name="Age" id="age" class="textbox-google" required>
                             <span class="bar"></span>
                             <label class="text-label">Возраст</label>
                         </div>
                         <div class="row-10">
                             <div class="row-label"><label for="caption">Описание</label></div>
-                            <textarea asp-for="Caption" name="Caption" id="caption" class="textarea-caption" placeholder="">
+                            <textarea asp-for="Caption" name="Caption" id="caption" class="textarea-caption" placeholder=""
+                              style="margin-left: -30px;">
                             </textarea>
                         </div>
                     </div>           
@@ -30,7 +31,7 @@
                 <input asp-action="NextRegStep" type="submit" class="button-Ok-Sign-Up" value="Далее →">
             </div>
             <div>
-                <a asp-controller="SignIn" asp-action="Index" class="ref-to-reg">Войти</a>
+                <a asp-controller="User" asp-action="Index" class="ref-to-reg">Войти</a>
             </div>
         </form>
     </div>

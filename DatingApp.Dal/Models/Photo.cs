@@ -12,7 +12,7 @@ namespace DatingApp.Dal.Models
     public class Photo: BaseModel
     {
         public int AccountId { get; set; }
-        public string PhotoPath { get; set; }
+        public byte[] Avatar { get; set; }
 
 
         [JsonIgnore]

@@ -1,5 +1,37 @@
-﻿@model DatingApp.Dal.Models.User
+﻿@model DatingApp.Dal.Models.Account
 
-
-<input asp-for="Login" value="@Model.Login"/>
-<input asp-for="Password" value="@Model.Password"/>
+<div class="container">
+    <div class="form-sign-in-container form-sign-in-container" style="width: 800px;">
+        <h2>Добро пожаловать, @Model.Name!</h2>
+        <div class="form-cols">
+            <div class="left-side">
+                <div class="row-10">
+                    <label for="Name">Имя</label>
+                    <input type="text" name="Name" value="@Model.Name">
+                </div>
+                <div class="row-10">
+                    <label for="Age">Возраст</label>
+                    <input type="text" name="Age" value="@Model.Age">
+                </div>
+                <div class="row-10">
+                    <label for="City">Город</label>
+                    <input type="text" name="City" value="@Model.City">
+                </div>
+                <div class="row-10">
+                    <label class="" for="Caption">Описание</label><br>
+                    <textarea name="Caption" class="textarea-caption" style="margin-left: 0px;">@Model.Caption</textarea>
+                </div>
+                <button class="button-Ok-Sign-Up">Edit info</button>
+            </div>
+            <div class="right-side">
+                <partial name="_partialProfile.cshtml" />
+            </div>
+        </div>
+        <div>
+            <div style="text-align: center">
+                <button onclick="location.href='@Url.Action("Exit")'" class="button_exit">Выйти</button>
+            </div>
+        </div>
+    </div>
+    
+</div>

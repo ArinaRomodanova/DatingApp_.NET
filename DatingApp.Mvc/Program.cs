@@ -8,6 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var connectionString = builder.Configuration.GetConnectionString("DatingApp");
 builder.Services.AddDbContextPool<DatabaseContext>(options =>
@@ -17,6 +23,7 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
 
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<IAccountRepo, AccountRepo>();
+builder.Services.AddScoped<IPhotoRepo, PhotoRepo>();
 
 var app = builder.Build();
 
@@ -34,6 +41,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
