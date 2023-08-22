@@ -1,8 +1,7 @@
-﻿
-<div>
-    <img style="border-radius: 30px; >  
+﻿<div>
+    <img style="border-radius: 30px;" src="data:image/jpeg;base64,@(Convert.ToBase64String((byte[])ViewData["Avatar"]))" />
 </div>
 <form asp-action="ChangePhoto" enctype="multipart/form-data">
-    <input name="uploadImage" type="file" name="file" accept=".jpeg">
+    <input name="uploadImage" type="file" name="file" accept=".jpeg"/>
     <input class="button-Ok-Sign-Up" type="submit" asp-action="ChangePhoto" value="Change photo" />
 </form>

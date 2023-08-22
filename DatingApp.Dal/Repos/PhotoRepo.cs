@@ -14,5 +14,16 @@ namespace DatingApp.Dal.Repos
         public PhotoRepo(DatabaseContext databaseContext) : base(databaseContext)
         {
         }
+
+        public Photo GetPhotoByAccountId(int? accountId)
+        {
+            if (accountId != null && accountId.HasValue)
+            {
+                return Table
+                    .Where(x => x.AccountId == accountId.Value)
+                    .First();
+            }
+            return null;
+        }
     }
 }

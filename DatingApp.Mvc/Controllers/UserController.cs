@@ -43,6 +43,7 @@ namespace DatingApp.Mvc.Controllers
             int? userId = HttpContext.Session.GetInt32("CurrentUserId");
             var user = GetUserById((int)userId);
             var account = _accountRepo.Find(user.AccountId);
+            ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id).Avatar;
             return View("Success", account);
         }
 
@@ -57,6 +58,7 @@ namespace DatingApp.Mvc.Controllers
             {
                 HttpContext.Session.SetInt32("CurrentUserId", checkUser.Id);
                 var account = _accountRepo.Find(checkUser.AccountId);
+                ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id).Avatar;
                 return View("Success", account);
             }
             ViewBag.IsCorrectSignInData = false;
