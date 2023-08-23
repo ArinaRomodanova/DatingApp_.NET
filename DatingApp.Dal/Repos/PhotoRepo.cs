@@ -15,13 +15,24 @@ namespace DatingApp.Dal.Repos
         {
         }
 
-        public Photo? GetPhotoByAccountId(int? accountId)
+        public Photo? GetAvatarByAccountId(int? accountId)
         {
             if (accountId != null && accountId.HasValue)
             {
                 return Table
                     .Where(x => x.AccountId == accountId.Value && x.IsAnAvatar == true)
                     .FirstOrDefault();
+            }
+            return null;
+        }
+
+        public IEnumerable<Photo>? GetPhotosByAccountId(int? accountId)
+        {
+            if (accountId != null && accountId.HasValue)
+            {
+                return Table
+                    .Where(x => x.AccountId == accountId.Value)
+                    .ToList();
             }
             return null;
         }

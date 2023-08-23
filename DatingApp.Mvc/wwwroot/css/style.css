@@ -317,6 +317,8 @@ img {
 
     .button_exit:hover {
         background-position: right center;
+        text-decoration: none;
+        color:white;
     }
 
 .card {

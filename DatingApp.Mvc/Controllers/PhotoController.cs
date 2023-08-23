@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DatingApp.Mvc.Controllers
 {
+    [Route("[controller]/[action]")]
     public class PhotoController : Controller
     {
         private readonly IPhotoRepo _photoRepo;
@@ -14,7 +15,7 @@ namespace DatingApp.Mvc.Controllers
 
         internal Photo? GetProfilePhoto(int accountId)
         {
-            return _photoRepo.GetPhotoByAccountId(accountId);
+            return _photoRepo.GetAvatarByAccountId(accountId);
         }
         public IActionResult WatchPhoto(int photoId)
         {
@@ -33,6 +34,14 @@ namespace DatingApp.Mvc.Controllers
             }
             photo.IsAnAvatar = true;
             _photoRepo.Update(photo);
+            return RedirectToAction("Index", "User");
+        }
+
+        [HttpGet]
+        public IActionResult DeletePhoto(int photoId)
+        {
+            var photo = _photoRepo.Find(photoId);
+            _photoRepo.Delete(photo);
             return RedirectToAction("Index", "User");
         }
     }

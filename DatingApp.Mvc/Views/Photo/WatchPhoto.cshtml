@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="form-sign-in-container">
-        <h2>Вход</h2>
+        <h2>Фото</h2>
         <form method="post">
             <div>
                 <input name="photoId" value="@Model.Id" hidden />
@@ -10,8 +10,12 @@
             </div>
             <div>
                 <input asp-action="ProfilePhoto" type="submit" class="button-Ok-Sign-In" style="width: 300px;" value="Сделать фото профиля" />
-                <button class="button_exit">Удалить фото</button>
+                
             </div>
+            
         </form>
+        <div style="margin-top: 20px">
+            <a class="button_exit" href='@Url.Action("DeletePhoto", new { photoId = Model.Id})'>Удалить фото</a>
+        </div>
     </div>
 </div>

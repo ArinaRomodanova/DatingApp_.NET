@@ -11,6 +11,7 @@ namespace DatingApp.Dal.Repos.Interfaces
 {
     public interface IPhotoRepo: IRepo<Photo>
     {
-        public Photo? GetPhotoByAccountId(int? accountId);
+        public Photo? GetAvatarByAccountId(int? accountId);
+        public IEnumerable<Photo>? GetPhotosByAccountId(int? accountId);
     }
 }
