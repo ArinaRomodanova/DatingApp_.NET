@@ -31,6 +31,10 @@ namespace DatingApp.Mvc.Controllers
         {
             return _repo.Find(id);
         }
+        internal IEnumerable<Photo> GetPhototsByAccountId(int accountId)
+        {
+            return _photoRepo.GetAll().Where(p => p.IsAnAvatar == false).ToList();
+        }
 
         public IActionResult Index()
         {
@@ -43,7 +47,8 @@ namespace DatingApp.Mvc.Controllers
             int? userId = HttpContext.Session.GetInt32("CurrentUserId");
             var user = GetUserById((int)userId);
             var account = _accountRepo.Find(user.AccountId);
-            ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id).Avatar;
+            ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id)?.Avatar;
+            ViewData["Photos"] = GetPhototsByAccountId(account.Id);
             return View("Success", account);
         }
 
@@ -58,7 +63,8 @@ namespace DatingApp.Mvc.Controllers
             {
                 HttpContext.Session.SetInt32("CurrentUserId", checkUser.Id);
                 var account = _accountRepo.Find(checkUser.AccountId);
-                ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id).Avatar;
+                ViewData["Avatar"] = _photoRepo.GetPhotoByAccountId(account.Id)?.Avatar;
+                ViewData["Photos"] = GetPhototsByAccountId(account.Id);
                 return View("Success", account);
             }
             ViewBag.IsCorrectSignInData = false;
@@ -85,6 +91,12 @@ namespace DatingApp.Mvc.Controllers
             Photo avatar = new Photo { AccountId = user.AccountId, Avatar = imageData };
             _photoRepo.Add(avatar);
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult WatchPhoto(int photoId)
+        {
+            return RedirectToAction("WatchPhoto", "Photo", new { photoId = photoId });
         }
     }
 }

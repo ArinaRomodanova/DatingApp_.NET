@@ -1,7 +1,26 @@
 ﻿<div>
-    <img style="border-radius: 30px;" src="data:image/jpeg;base64,@(Convert.ToBase64String((byte[])ViewData["Avatar"]))" />
+    @{
+        if (ViewData["Avatar"] == null)
+        {
+            <img style="border-radius: 30px; height: 200px; margin-bottom: 10px" src="~/images/noPhoto.jpg" />
+        }
+        else
+        {
+            <img style="border-radius: 30px; height: 200px; margin-bottom: 10px" src="data:image/jpeg;base64,@(Convert.ToBase64String((byte[])ViewData["Avatar"]))" />
+        }
+    }
+    <div>
+        <section class="card">
+            @{
+                foreach (DatingApp.Dal.Models.Photo p in ViewData["Photos"] as IEnumerable<DatingApp.Dal.Models.Photo>)
+                {
+                    <img style="height: 100px;" src="data:image/jpeg;base64,@(Convert.ToBase64String((byte[])p.Avatar))" onclick="location.href='@Url.Action("WatchPhoto", new {photoId = p.Id})'" />
+                }
+            }
+        </section>
+    </div>
 </div>
 <form asp-action="ChangePhoto" enctype="multipart/form-data">
-    <input name="uploadImage" type="file" name="file" accept=".jpeg"/>
-    <input class="button-Ok-Sign-Up" type="submit" asp-action="ChangePhoto" value="Change photo" />
+    <input name="uploadImage" type="file" accept=".jpeg, .png, .jpg"/>
+    <input class="button-Ok-Sign-Up" type="submit" asp-action="ChangePhoto" value="Добавить фото" />
 </form>

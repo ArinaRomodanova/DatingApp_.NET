@@ -1,0 +1,17 @@
+﻿@model DatingApp.Dal.Models.Photo
+
+<div class="container">
+    <div class="form-sign-in-container">
+        <h2>Вход</h2>
+        <form method="post">
+            <div>
+                <input name="photoId" value="@Model.Id" hidden />
+                <img style="height: 300px; cursor: pointer" src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Avatar))"
+            </div>
+            <div>
+                <input asp-action="ProfilePhoto" type="submit" class="button-Ok-Sign-In" style="width: 300px;" value="Сделать фото профиля" />
+                <button class="button_exit">Удалить фото</button>
+            </div>
+        </form>
+    </div>
+</div>

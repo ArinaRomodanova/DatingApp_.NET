@@ -16,4 +16,8 @@
     <ProjectReference Include="..\DatingApp.Logging\DatingApp.Logging.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
 </Project>
