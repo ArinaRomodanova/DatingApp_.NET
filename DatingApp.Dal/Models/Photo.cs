@@ -1,4 +1,5 @@
 ﻿using DatingApp.Dal.Models.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace DatingApp.Dal.Models
 {
+    [Index(nameof(AccountId), IsUnique = false)]
     public class Photo: BaseModel
     {
         public int AccountId { get; set; }
